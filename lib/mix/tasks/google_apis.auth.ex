@@ -27,7 +27,7 @@ defmodule Mix.Tasks.GoogleApis.Auth do
     authenticate(
       Application.get_env(:google_apis, :oauth_client),
       Application.get_env(:google_apis, :oauth_secret),
-      Enum.join(scopes, ",")
+      Enum.join(scopes, " ")
     )
   end
 
